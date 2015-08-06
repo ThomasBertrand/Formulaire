@@ -1,0 +1,20 @@
+{# 'ME/PlatformBundle/Resources/views/Default/inscription.html.twig' #}
+<html>
+	<head>
+		{% block stylesheet %}
+			<link href="{{ asset('bundles/Public/css/style.css') }}" type="text/css" rel="stylesheet" />
+		{% endblock %}
+	</head>
+	<body>
+		<ul>
+			{% for contact in list %}
+				<li><a href="{{ profil_url|trim("USER")~contact.userName }}">{{ contact.userName }}</a></li>
+			{% else %}
+				<li>Aucun contact</li>
+			{% endfor %}
+		</ul>
+	</body>
+	<footer>
+		<a href="{{ accueil_url }}">Accueil</a>
+	</footer>
+</html>

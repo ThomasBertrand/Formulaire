@@ -1,0 +1,19 @@
+{# 'ME/PlatformBundle/Resources/views/Default/inscription.html.twig' #}
+<html>
+	<head>
+		{% block stylesheet %}
+			<link href="{{ asset('bundles/Public/css/style.css') }}" type="text/css" rel="stylesheet" />
+		{% endblock %}
+	</head>
+	<body>
+		<p>Profil de {{ user_name }}</p>
+		<p>E-Mail : {{ mail }}</p>
+		<p>Téléphone : {{ telephone }}</p>
+		<p>Adresse : {{ adresse }}</p>
+		<p>Site Web : {{ website }}</p>
+		<p>{{ edit|raw }}</p>
+	</body>
+	<footer>
+		<a href="{{ accueil_url }}">Accueil</a>
+	</footer>
+</head>

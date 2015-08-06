@@ -1,0 +1,4 @@
+services:
+#    me_platform.example:
+#        class: ME\PlatformBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

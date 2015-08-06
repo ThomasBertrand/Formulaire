@@ -1,0 +1,47 @@
+{# 'ME/PlatformBundle/Resources/views/Default/inscription.html.twig' #}
+<html>
+	<head>
+		{% block stylesheet %}
+			<link href="{{ asset('bundles/Public/css/style.css') }}" type="text/css" rel="stylesheet" />
+		{% endblock %}
+	</head>
+	<body>
+	<p>{{ type_page }}</p>
+		{% if connecter %}
+		{{ form_start(form, {'attr': {'class': 'form-horizontale'}}) }}
+		{{ form_errors(form) }}
+		<div class="case">
+			{{ form_label(form.mail, "E-mail* :", {'label_attr': {'class': 'label control-label'}}) }}
+			{{ form_widget(form.mail, {'attr': {'class': 'form-control'}}) }}
+		</div>
+		<div class="case">
+			{{ form_errors(form.mail) }}
+		</div>
+		<div class="case2">
+			{{ form_label(form.adresse, "Adresse* :", {'label_attr': {'class': 'label control-label'}}) }}
+			{{ form_widget(form.adresse, {'attr': {'class': 'form-control'}}) }}
+		</div>
+		<div class="case">
+			{{ form_errors(form.adresse) }}
+		</div>
+		<div class="case">
+			{{ form_label(form.telephone, "Téléphone* :", {'label_attr': {'class': 'label control-label'}}) }}
+			{{ form_widget(form.telephone, {'attr': {'class': 'form-control'}}) }}
+		</div>
+		<div class="case">
+			{{ form_errors(form.telephone) }}
+		</div>
+		<div class="case">
+			{{ form_label(form.webSite, "Site web :", {'label_attr': {'class': 'label control-label'}}) }}
+			{{ form_widget(form.webSite, {'attr': {'class': 'form-control'}}) }}
+		</div>
+		<div class="case">
+			{{ form_errors(form.webSite) }}
+		</div>
+		{{ form_rest(form) }}
+		{% endif %}
+	</body>
+	<footer>
+		<a href="{{ accueil_url }}">Accueil</a>
+	</footer>
+</html>

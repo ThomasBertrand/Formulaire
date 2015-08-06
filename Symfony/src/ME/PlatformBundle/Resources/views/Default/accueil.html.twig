@@ -1,0 +1,22 @@
+{# 'ME/PlatformBundle/Resources/views/Default/inscription.html.twig' #}
+<html>
+	<head>
+		{% block stylesheet %}
+			<link href="{{ asset('bundles/Public/css/style.css') }}" type="text/css" rel="stylesheet" />
+		{% endblock %}
+	</head>
+	<body>
+		<p>
+		<a href="{{lien1}}">{{name1}}</a> || <a href="{{lien2}}">{{name2}}</a>
+		</p>
+		<p>
+		<a href="{{add_url}}">Ajouter</a>
+		</p>
+		<p>
+		<a href="{{remove_url}}">Supprimer</a>
+		</p>
+		<p>
+		<a href="{{list_url}}">Voir</a>
+		</p>
+	</body>
+</html>

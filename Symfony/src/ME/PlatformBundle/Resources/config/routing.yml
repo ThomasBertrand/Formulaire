@@ -1,0 +1,27 @@
+me_platform_accueil:
+   path:   /accueil
+   defaults:   { _controller: MEPlatformBundle:Accueil:accueil }
+me_platform_connexion:
+   path:   /connexion
+   defaults:   { _controller: MEPlatformBundle:Login:connexion }
+me_platform_deconnexion:
+   path:   /deconnexion
+   defaults:   { _controller: MEPlatformBundle:Login:deconnexion }
+me_platform_viewProfil:
+   path:   /view/{user_name}
+   defaults:   { _controller: MEPlatformBundle:Profil:viewProfil }
+me_platform_editProfil:
+   path:   /edit
+   defaults:   { _controller: MEPlatformBundle:Profil:editProfil }
+me_platform_inscription:
+   path:   /inscription
+   defaults:   { _controller: MEPlatformBundle:Profil:inscription }
+me_platform_listeCarnet:
+   path:   /carnet
+   defaults:   { _controller: MEPlatformBundle:Carnet:showCarnet }
+me_platform_addContact:
+   path:   /addContact
+   defaults:   { _controller: MEPlatformBundle:Carnet:addContact }
+me_platform_delContact:
+   path:   /delContact
+   defaults:   { _controller: MEPlatformBundle:Carnet:delContact }
